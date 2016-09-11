@@ -1,0 +1,91 @@
+/*公共样式定义*/
+/*靠右显示*/
+.fr {
+    float: right;
+}
+
+/*新开一行，靠右显示*/
+.cfr {
+    clear: both;
+    float: right;
+}
+
+/*靠左显示*/
+.fl {
+    float: left;
+}
+
+/*新开一行，靠左显示*/
+.cfl {
+    clear: both;
+    float: left;
+}
+
+/*靠底部显示*/
+.fb {
+    float: bottom;
+}
+
+/*新开一行，靠底部显示*/
+.cfb {
+    clear: both;
+    float: bottom;
+}
+
+/*清除格式*/
+.cf {
+    clear: both;
+}
+
+/*清除格式并居中显示*/
+.cfc {
+    clear: both;
+    text-align: center;
+}
+
+/*设置整个页面的外边距、内边距（上下左右）*/
+.bodyStyle {
+    margin: 10px;
+    padding: 10px;
+}
+
+/*标题栏的背景色样式”*/
+.titleBackground {
+    height: 30px;
+    width: 100%;
+    background: #EFEFEF;
+    font-family: 'Microsoft Yahei';
+}
+
+/*标题文本样式”*/
+.title {
+    display: inline-block;
+    letter-spacing: 3px;
+    height: 30px;
+    font-family: 'Microsoft Yahei';
+    font-size: 16px;
+    color: white;
+    background-color: #FF4400;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/*各个栏背景样式*/
+.footerBackground {
+    height: 50px;
+    background: #e5e5e5;
+    font-family: 'Microsoft Yahei';
+    width: 100%;
+    text-align: center;
+}
+
+/*公司名称文本样式*/
+.copy_layout {
+    display: inline-block;
+    margin-top: 15px;
+    line-height: 50px;
+    font-family: "Microsoft Yahei";
+    font-size: 13px;
+}
