@@ -334,9 +334,13 @@ $(function(){
 $(function(){
 	$("#save_submit").on("click",function(){
 		if(!valiItemsName()||!valiItemsDescribe()||!valiMaterial()||!valiLength()||!valiTypeversion()||!valiSchools()||!valiSeason()){
-			layer.msg('请完善商品信息！');
+			layer.msg('请完善商品信息！', {
+				time: 1000,
+			});
 		}else if(!valiNewSkuNum()||!valiNewSkuPrice()){
-			layer.msg('请完善SKU信息！');
+			layer.msg('请完善SKU信息！', {
+				time: 1000,
+			});
 		}
 	})
 })

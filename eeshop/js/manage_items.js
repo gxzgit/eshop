@@ -1,6 +1,6 @@
 // JavaScript Document
 function selectAll(obj){
-	var arrChk = $("[name='check_this']");
+	var arrChk = $("input[name='check_this']");
 	if(obj.checked){
 		for(var i =0;i<arrChk.length;i++){
 			arrChk[i].checked = true;
@@ -67,6 +67,44 @@ $(function(){
 	});
 })
 
+
+
+$(function(){
+	$("#items").delegate('tr>td>#delete_items','click',function(){
+		var obj = $(this);
+		layer.confirm('确认下架该商品？', {
+			btn: ['确定','取消'] //按钮
+		}, function(){
+			obj.parent().parent().remove();
+			layer.msg('该商品已下架！', {
+				time: 1000,
+			});
+		}, function(){});
+	});
+})
+
+
+$(function(){
+	$("#delete_some_items").click(function(){
+		var itemsList = $("input:checkbox[name='check_this']:checked");
+		if(itemsList.length==0){
+			layer.msg('请选择商品！', {
+				time: 1000,
+			});
+		}else{
+			layer.confirm('确认下架？', {
+				btn: ['确定','取消'] //按钮
+			}, function(){
+				$("input:checkbox[name='check_this']:checked").each(function() {
+                	$(this).parent().parent().remove();
+           		});
+				layer.msg('已下架！', {
+					time: 1000,
+				});
+			}, function(){});
+		}
+	})
+})
 
 
 $(function(){

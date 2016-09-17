@@ -9,6 +9,8 @@
     <link type="text/css" rel="stylesheet" href="../css/ufavorites.css"/>
     <script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/ufavorites.js"></script>
+    <script type="text/javascript" src="../js/layer/layer.js"></script>
 
 </head>
 
@@ -60,7 +62,7 @@
             </li>
             <li class="dingdan"><a class="dd" href="#">我的订单</a></li>
             <li><a class="dl" href="#" style="color:#F00">退出</a></li>
-            <li><a class="dl" href="pdata.html" id="login" name="login">江宁超</a></li>
+            <li><a class="dl" href="" id="login" name="login">江宁超</a></li>
         </ul>
 
 
@@ -88,44 +90,120 @@
     </div>
 </div>
 
-<div id="main"> 
-	<div class="home-feeds">
-    	<div class="wrap">
-        	<ul class="feed-list clearfix">
+<div id="main">
+    <div class="home-feeds">
+        <div class="wrap">
+            <ul class="feed-list clearfix">
                 <li class="feed-item">
-                	<div class="feed-image-wrap">
-                    	<a href="#" target="_blank">
-                        	<img class="fade-in" src="../images/detailimage/item1/item1_show1.jpg" width="100%" />
+                    <div class="feed-image-wrap">
+                        <a href="#" target="_blank">
+                            <img class="fade-in" src="../images/detailimage/item1/result-1-small.jpg" width="100%"/>
                         </a>
                         <span class="price">¥20</span>
                     </div>
                     <div class="feed-detail">
-                    	<div class="feed-title">
-                        <a href="#" target="_blank">夏季吊带可爱卡通休闲家居字母背心性感短裤套装</a>
+                        <div class="feed-title">
+                            <a href="#" target="_blank">夏季吊带可爱卡通休闲家居字母背心性感短裤套装</a>
                         </div>
                         <div class="mt20 clearfix">
-                        	<div class="fr">2014-08-24</div>
+                            <div class="fr">2014-08-24</div>
                             <div class="fl">
-                        		<a href="ufavorites.html" target="_self"><input type="button" value="取消收藏"></a>
+                                <input type="button" value="取消收藏" class="delete-favorite">
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="feed-item">
-                	<div class="feed-image-wrap">
-                    	<a href="#" target="_blank">
-                        	<img class="fade-in" src="../images/detailimage/item1/item1_show1.jpg" width="100%" />
+                    <div class="feed-image-wrap">
+                        <a href="#" target="_blank">
+                            <img class="fade-in" src="../images/detailimage/item1/result-1-small.jpg" width="100%"/>
                         </a>
                         <span class="price">¥20</span>
                     </div>
                     <div class="feed-detail">
-                    	<div class="feed-title">
-                        <a href="#" target="_blank">夏季吊带可爱卡通休闲家居字母背心性感短裤套装</a>
+                        <div class="feed-title">
+                            <a href="#" target="_blank">夏季吊带可爱卡通休闲家居字母背心性感短裤套装</a>
                         </div>
                         <div class="mt20 clearfix">
-                        	<div class="fr">2014-08-24</div>
+                            <div class="fr">2014-08-24</div>
                             <div class="fl">
-                        		<a href="ufavorites.html" target="_self"><input type="button" value="取消收藏"></a>
+                                <input type="button" value="取消收藏" class="delete-favorite">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="feed-item">
+                    <div class="feed-image-wrap">
+                        <a href="#" target="_blank">
+                            <img class="fade-in" src="../images/detailimage/item1/result-1-small.jpg" width="100%"/>
+                        </a>
+                        <span class="price">¥20</span>
+                    </div>
+                    <div class="feed-detail">
+                        <div class="feed-title">
+                            <a href="#" target="_blank">吊带可爱卡通休闲家居字母背心性感短裤套装</a>
+                        </div>
+                        <div class="mt20 clearfix">
+                            <div class="fr">2014-08-24</div>
+                            <div class="fl">
+                                <input type="button" value="取消收藏" class="delete-favorite">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="feed-item">
+                    <div class="feed-image-wrap">
+                        <a href="#" target="_blank">
+                            <img class="fade-in" src="../images/detailimage/item1/result-1-small.jpg" width="100%"/>
+                        </a>
+                        <span class="price">¥20</span>
+                    </div>
+                    <div class="feed-detail">
+                        <div class="feed-title">
+                            <a href="#" target="_blank">夏季吊带可爱卡通休闲家居字母背心性感短裤套装</a>
+                        </div>
+                        <div class="mt20 clearfix">
+                            <div class="fr">2014-08-24</div>
+                            <div class="fl">
+                                <input type="button" value="取消收藏" class="delete-favorite">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="feed-item">
+                    <div class="feed-image-wrap">
+                        <a href="#" target="_blank">
+                            <img class="fade-in" src="../images/detailimage/item1/result-1-small.jpg" width="100%"/>
+                        </a>
+                        <span class="price">¥20</span>
+                    </div>
+                    <div class="feed-detail">
+                        <div class="feed-title">
+                            <a href="#" target="_blank">夏季吊带可爱卡通休闲家居字母背心性感短裤套装</a>
+                        </div>
+                        <div class="mt20 clearfix">
+                            <div class="fr">2014-08-24</div>
+                            <div class="fl">
+                                <input type="button" value="取消收藏" class="delete-favorite">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="feed-item">
+                    <div class="feed-image-wrap">
+                        <a href="#" target="_blank">
+                            <img class="fade-in" src="../images/detailimage/item1/result-1-small.jpg" width="100%"/>
+                        </a>
+                        <span class="price">¥20</span>
+                    </div>
+                    <div class="feed-detail">
+                        <div class="feed-title">
+                            <a href="#" target="_blank">夏季吊带可爱卡通休闲家居字母背心性感短裤套装</a>
+                        </div>
+                        <div class="mt20 clearfix">
+                            <div class="fr">2014-08-24</div>
+                            <div class="fl">
+                                <input type="button" value="取消收藏" class="delete-favorite">
                             </div>
                         </div>
                     </div>

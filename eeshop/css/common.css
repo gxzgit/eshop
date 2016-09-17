@@ -1,4 +1,4 @@
-/*公共样式定义*/
+﻿/*公共样式定义*/
 /*靠右显示*/
 .fr {
     float: right;
@@ -43,17 +43,17 @@
     text-align: center;
 }
 
-/*设置整个页面的外边距、内边距（上下左右）*/
+/*设置整个页面的外边距、内边距（上右下左）*/
 .bodyStyle {
-    margin: 10px;
-    padding: 10px;
+    margin: 0px 20px 20px 20px;
+    padding: 0px 20px 20px 20px;
 }
 
 /*标题栏的背景色样式”*/
 .titleBackground {
     height: 30px;
     width: 100%;
-    background: #EFEFEF;
+    background: #F9F9F9;
     font-family: 'Microsoft Yahei';
 }
 
@@ -65,27 +65,26 @@
     font-family: 'Microsoft Yahei';
     font-size: 16px;
     color: white;
-    background-color: #FF4400;
+    background-color: #FF4466;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
     border-radius: 2px;
 }
 
-/*各个栏背景样式*/
-.footerBackground {
-    height: 50px;
-    background: #e5e5e5;
-    font-family: 'Microsoft Yahei';
-    width: 100%;
-    text-align: center;
+.xd-manage-nav {
+	width:100%;
+	height:60px;
+	margin-bottom:1px;
+	background:#F9F9F9;
 }
 
-/*公司名称文本样式*/
-.copy_layout {
-    display: inline-block;
-    margin-top: 15px;
-    line-height: 50px;
-    font-family: "Microsoft Yahei";
-    font-size: 13px;
+.xd-manage-nav .logo {
+	background:url(../images/foot-logo.png) no-repeat;
+	display:inline-block;
+	width:188px;
+	height:32px;
+	font:0/0 a;
+	margin-top:14px;
+	margin-left:20px
 }

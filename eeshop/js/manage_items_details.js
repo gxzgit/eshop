@@ -1,4 +1,30 @@
 // JavaScript Document
+function valiItemsName(){
+	$("#items_name").val($("#items_name").val().replace(/(^\s*)|(\s*$)/g,""));
+	var itemsName = $("#items_name").val();
+	if(itemsName==null || itemsName==""){
+		$("#items_name").focus();
+		return false;
+	}else{
+		return true;
+	}
+}
+
+
+
+function valiItemsDescribe(){
+	$("#items_describe").val($("#items_describe").val().replace(/(^\s*)|(\s*$)/g,""));
+	var itemsDescribe = $("#items_describe").val();
+	if(itemsDescribe==null || itemsDescribe==""){
+		$("#items_describe").focus();
+		return false;
+	}else{
+		return true;
+	}
+}
+
+
+
 function valiSkuNum(){
 	var skuNum = [];
 	$(".stock-text.xd-input.primary.sku-num").each(function(index, element) {
@@ -85,7 +111,15 @@ function valiNewSkuPrice(){
 
 $(function(){
 	$("#sku").delegate('tr>td>#delete_sku','click',function(){
-		$(this).parent().parent().remove();
+		var obj = $(this);
+		layer.confirm('确认删除该SKU？', {
+			btn: ['确定','取消'] //按钮
+		}, function(){
+			obj.parent().parent().remove();
+			layer.msg('SKU已删除！', {
+				time: 1000,
+			});
+		}, function(){});
 	});
 })	
 
@@ -213,8 +247,14 @@ $(function(){
 
 $(function(){
 	$("#save_submit").on("click",function(){
-		if(!valiSkuNum()||!valiSkuPrice()||!valiNewSkuNum()||!valiNewSkuPrice()){
-			layer.msg('请完善SKU信息！');
+		if(!valiItemsName()||!valiItemsDescribe()||!valiMaterial()||!valiLength()||!valiTypeversion()||!valiSchools()||!valiSeason()){
+			layer.msg('请完善商品信息！', {
+				time: 1000,
+			});
+		}else if(!valiSkuNum()||!valiSkuPrice()||!valiNewSkuNum()||!valiNewSkuPrice()){
+			layer.msg('请完善SKU信息！', {
+				time: 1000,
+			});
 		}
 	})
 })

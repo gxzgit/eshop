@@ -75,21 +75,6 @@ small,weak{color:#666}
 .admin_login dd .submit_btn:hover{background:#0c9076;color:#f4f4f4;}
 .admin_login dd p{color:#53c6b0;font-size:12px;text-align:center;margin:5px 0;}
 
-/*header*/
-header{background:#7FBFFF;overflow:hidden;}
-header h1{margin:0;float:left;margin-left:1%;}
-header h1 img{width:auto;max-width:300px;height:70px;}
-header .rt_nav{float:right;overflow:hidden;margin-right:3%;margin-top:0px;}
-header .rt_nav li{float:left;padding:0 25px;text-align:center;border-right:1px #139667 solid;}
-header .rt_nav li:last-child{border:none;}
-header .rt_nav li a{color:white;font-size:12px;text-shadow:0 0 1px #20af83;display:block;}
-header .rt_nav li a:hover{color:#f4f4f4;}
-header .rt_nav li a:hover:before{color:#f4f4f4;}
-header .rt_nav li a:before{font-family:'adminthemesregular';color:white;font-size:30px;display:block;}
-header .rt_nav li .website_icon:before{content:"I";}
-header .rt_nav li .admin_icon:before{content:"U";}
-header .rt_nav li .set_icon:before{content:"S";}
-header .rt_nav li .quit_icon:before{content:"Q";}
 /*aside nav*/
 .lt_aside_nav{width:210px;height:100%;position:absolute;top:70px;left:0;background:#fcfcfc;}
 .lt_aside_nav h2{text-align:center;border-bottom:1px #b6b6b6 solid;margin-top: 0;height:45px;line-height:45px;background:#efefef;}
@@ -192,3 +177,42 @@ header .rt_nav li .quit_icon:before{content:"Q";}
 .loading_icon i:nth-child(4){-webkit-animation:loading_icon 1s ease-in .4s infinite;-moz-animation:loading_icon 1s ease-in .4s infinite;animation:loading_icon 1s ease-in .4s infinite}
 .loading_icon i:nth-child(5){-webkit-animation:loading_icon 1s ease-in .5s infinite;-moz-animation:loading_icon 1s ease-in .5s infinite;animation:loading_icon 1s ease-in .5s infinite}
 .loading_txt mark{background:none;font-size:12px;color:red;}
+/*����������ʽ*/
+.search_text {
+    display: block;
+    color: #666;
+    font-size: 12px;
+    padding-left: 13px;
+    border: 1px solid #3a3a3a;
+    height: 35px;
+    width: 60px;
+    line-height: 35px;
+    float: left;
+    cursor: pointer;
+    position: relative;
+}
+/*��������ʽ*/
+.search_box{
+    font-size: 12px;
+    border: 1px solid #3a3a3a;
+    height: 35px;
+    display: block;
+    width: 300px;
+    line-height: 35px;
+    outline: none;
+    float: left;
+    margin-top: 20px;
+    color: #999999;
+}
+/*������ť��ʽ*/
+.search_button {
+    height: 35px;
+    display: block;
+    background: url(../../images/head-main-search.png) no-repeat;
+    width: 71px;
+    border: none;
+    outline: none;
+    float: left;
+    margin-top: 20px;
+    cursor: pointer;
+}
