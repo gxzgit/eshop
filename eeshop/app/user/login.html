@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <link rel="icon" href="../../images/favicon.ico">
     <title>登录页面</title>
+
+    <script type="text/javascript" src="../../js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../../js/layer/layer.js"></script>
     <!-- Bootstrap core CSS -->
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../../css/index.css"/>
@@ -58,8 +61,16 @@
                 document.getElementById('message_psaaword').innerHTML = '✘密码错误';
                 flag = false;
             }
-            if (flag == true) {
-
+            if (flag) {
+                layer.msg('登陆成功！', {
+                    time: 1500, 												//1.5s后自动关闭并跳转到首页
+                });
+                setTimeout("javascript:location.href='../../index.html'", 1500);
+            }
+            else{
+                layer.msg('登陆失败！', {
+                    time: 1500, 												//1.5s后自动关闭
+                });
             }
         }
         /*//用户名验证JQ的写法
