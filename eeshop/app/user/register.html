@@ -9,6 +9,7 @@
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../../css/index.css"/>
     <script type="text/javascript" src="../../js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../../js/layer/layer.js"></script>
     <style type="text/css">
         .span_control {
             width: 2px;
@@ -97,7 +98,15 @@
 
         function regist() {
             if (formValidate()) {
-
+                layer.msg('注册成功！', {
+                    time: 1500, 												//1.5s后自动关闭并跳转到首页
+                });
+               setTimeout("javascript:location.href='../../index.html'", 1500);
+            }
+            else{
+                layer.msg('注册失败！', {
+                    time: 1500, 												//1.5s后自动关闭
+                });
             }
         }
     </script>
@@ -175,7 +184,7 @@
                 <td colspan="2" align="left" valign="middle">
                     <input class="btn btn-lg btn-danger btn-block size_control"
                            style="width: 310px" type="button" id="button_register" value="立即注册"
-                           onClick="formValidate()">
+                           onClick="regist() ,formValidate()">
                 </td>
             </tr>
         </table>
