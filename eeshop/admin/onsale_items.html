@@ -34,9 +34,32 @@
                 </div>
                 <div class="publish-content">
                     <div class="form">
-                        <div class="field clearfix">
+                    	<div class="field clearfix">
                             <label class="fl">
                                 <span>热卖区</span>
+                                <span>&nbsp;</span>
+                            </label>
+							<div class="field-content fl">
+                                <div class="sku-setting">
+                                    <div class="setting-content" style="height: 72px;">
+                                        <div class="sku-data">
+                                            <div class="list clearfix" style="display: block;">
+                                                <label class="fl">请选择楼层：</label>
+                                                <ul class="fl" id="floor_ul">
+                                                    <li class="xd-tag c" style="width: 58px;margin-right: 0px;">楼层1</li>
+                                                    <li class="xd-tag" style="width: 58px;margin-right: 0px;">楼层2</li>
+                                                    <li class="xd-tag" style="width: 58px;margin-right: 0px;">楼层3</li>
+                                                    <li class="xd-tag" style="width: 58px;margin-right: 0px;">楼层4</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field clearfix">
+                            <label class="fl">
+                                <span>当前楼层</span>
                             </label>
                             <div class="field-content fl">
                                 <div class="ppg" style="width: 960px;">
@@ -83,7 +106,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="field clearfix hide" style="margin-top: 70px;" id="test">
+                        <div class="field clearfix hide" style="margin-top: 70px;" id="add_url">
                             <label class="fl">
                                 <span>验证商品</span>
                                 <span>&nbsp;</span>
@@ -93,13 +116,12 @@
                                     <div>
                                         <ul style="padding-left: 0px;">
                                             <li class="action">
-                                                <input class="goods-tag-name xd-input primary" id="items_id"
-                                                       placeholder="请输入商品编号"/>
-                                                <a href="#" class="test-btn" id="test_items">验证</a>
+                                                <input class="goods-tag-name xd-input primary" id="url"
+                                                       placeholder="请输入链接" style="width: 322px;"/>
                                             </li>
                                         </ul>
                                     </div>
-                                    <p class="desc" id="result">请输入商品编号，验证商品是否在架</p>
+                                    <p class="desc" id="result">请输入点击时打开的页面地址</p>
                                 </div>
                             </div>
                         </div>
